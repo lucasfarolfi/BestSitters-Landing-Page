@@ -1,0 +1,594 @@
+/* ---------- Global formatations -----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 18px 'Trebuchet MS', Sans-serif;
+}
+ul{
+    list-style: none;
+    margin-left: 0;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* ---------- General formatations -----------*/
+#depoiments h2, #prices h2, #contact h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.d-flex{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.button{
+    outline: none;
+    background-color: transparent;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+/* ---------- Container -----------*/
+.container{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container-2{
+    width: 50%;
+}
+
+/* ---------- Header -----------*/
+header{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 5;
+    background-color: #FFF;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container img{
+    display: flex;
+    align-self: center;
+    width: 45px;
+    height: 45px;
+}
+nav#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav#navbar li{
+    margin-left: 25px;
+}
+nav#navbar a{
+    color: #DB695A;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+nav#navbar a:hover{
+    color: #fbb1a7;
+}
+header #menu-hamburuger{
+    display: none;
+}
+
+/* ---------- Banner 1 -----------*/
+#banner-1{
+    background-color: #f3fdfd;
+    height: 600px;
+}
+#banner-1 h2{
+    color: #E59085;
+    margin-bottom: 20px;
+}
+#banner-1 p{
+    color: #6e6e6e;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#banner-1 button{
+    border-color: #E59085;
+    color: #E59085;
+}
+#banner-1 button:hover{
+    color: white;
+    background-color: #E59085;
+}
+#banner-1 img{
+    width: 100%;
+}
+
+/* ---------- Banner 2 -----------*/
+#banner-2{
+    background-color: #B9E4ED;
+    height: 600px;
+}
+#banner-2 img{
+    width: 100%;
+}
+#banner-2 h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#banner-2 p{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+/* ---------- Depoiments -----------*/
+#depoiments{
+    height: 600px;
+    padding: 30px 0;
+}
+#depoiments-flex{
+    justify-content: space-around;
+    margin-top: 100px;
+}
+#depoiments h2{
+    color: #85A9CD;
+}
+.depoiment-box{ 
+    color: #FFF;
+    background-color:#85A9CD;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.depoiment-box img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.depoiment-box h4{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.depoiment-box p{
+    text-align: center;
+}
+
+/* ---------- Prices -----------*/
+#prices{
+    background-color: #F3F3F3;
+    height: 600px;
+    padding: 30px;
+}
+#prices h2{
+    color: #DB695A;
+}
+.prices-flex{
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.price-box{
+    color: #FFF;
+    border-radius: 30px;
+    padding: 20px 0;
+    width: 250px;
+    height: 300px;
+}
+.price-box h4{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.price-box-1{
+    background-color: #DB695A;
+}
+.price-box-2{
+    background-color: #88D1C6;
+}
+.price-box-3{
+    background-color: #FFED00;
+}
+#price-flex{ 
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-around;
+}
+.price-currency{
+    font-size: 30px;
+}
+.price-value{
+    font-size: 70px;
+}
+.price-hour{
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+/* ---------- Contact -----------*/
+#contact{
+    padding: 30px 0;
+    height: 600px;
+}
+#contact h2{
+    color: #88D1C6;
+}
+#contact img{
+    max-height: 450px;
+}
+#form-box{
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    width: 100%;
+    max-height: 450px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+#form-box input{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    text-indent: 15px;
+    margin-bottom: 15px;
+}
+#form-box textarea{
+    font: 13.5px 'Trebuchet MS';
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 100%;
+    height: 180px;
+    text-indent: 15px;
+    margin-bottom: 30px;
+}
+#form-box button{
+    border: none;
+    color: #fff;
+    background-color: #88D1C6;
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+}
+#form-box button:hover{
+    background-color: #7fe6d6;
+}
+
+/* ---------- Footer -----------*/
+footer{
+    color: #fff;
+    background-color: #E88A7D;
+    height: 300px;
+    padding-top: 30px;
+}
+footer span#direitos{ 
+    font-size: 25px;
+}
+footer ul{
+    margin-top: 20px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer a{
+    color: #FFF;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* ---------- Media Queries -----------*/
+
+/* Big Tablets/Ipad Pro Screen */
+@media (max-width:1024px){
+    
+    /* ---------- Global formatations -----------*/
+    body{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    /* ---------- General formatations -----------*/
+    .button{
+        font-size: 16px;
+    }
+
+    /* ---------- Depoiments -----------*/
+    #depoiments{
+        height: 550px;
+    }
+    #depoiments-flex{
+        margin-top: 70px;
+    }
+    .depoiment-box{ 
+        width: 215px;
+        height: 300px;
+        padding: 14px;
+    }
+
+    /* ---------- Prices -----------*/
+    #prices{
+        height: 600px;
+        padding: 30px;
+    }
+    .prices-flex{
+        margin-top: 100px;
+    }
+    .price-box{
+        padding: 20px 0;
+        width: 200px;
+        height: 250px;
+    }
+    .price-box h4, 
+    .price-currency,
+    .price-hour{
+        font-size: 25px;
+    }
+    .price-value{
+        font-size: 60px;
+    }
+
+    /* ---------- Contact -----------*/
+    #contact img {
+        width: 100%;
+        max-height: none;
+    }
+
+    /* ---------- Footer -----------*/
+    footer span#direitos{ 
+        font-size: 22px;
+    }
+    footer a{
+        color: #FFF;
+    }
+}
+
+/* Small Tablets/Ipad Screen */
+@media (max-width:768px){
+
+    /* ---------- Global formatations -----------*/
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    /* ---------- General formatations -----------*/
+    .button{
+        font-size: 14px;
+    }
+
+    /* ---------- Banner 1 -----------*/
+    #banner-1{
+        height: 400px;
+    }
+
+    /* ---------- Banner 2 -----------*/
+    #banner-2{
+        height:400px;
+    }
+
+
+    /* ---------- Depoiments -----------*/
+    #depoiments{
+        height:400px;
+        padding: 30px 0;
+    }
+    #depoiments-flex{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .depoiment-box{ 
+        width: 160px;
+        height: 240px;
+        padding-top: 15px;
+    }
+    .depoiment-box img{
+        width: 60px;
+        height: 60px;
+    }
+    .depoiment-box h4{
+        font-size: 16px;
+    }
+    .depoiment-box p{
+        font-size: 13px;
+    }
+
+    /* ---------- Prices -----------*/
+    #prices{
+        height: 400px;
+        padding: 30px;
+    }
+    .prices-flex{
+        margin-top: 50px;
+    }
+    .price-box{
+        width: 150px;
+        height: 220px;
+    }
+    .price-box h4, 
+    .price-currency,
+    .price-hour{
+        font-size: 18px;
+    }
+    .price-value{
+        font-size: 45px;
+    }
+
+    /* ---------- Contact -----------*/
+    #contact{
+        height: 500px;
+    }
+    #form-box input{
+        font-size: 11px;
+    }
+    #form-box textarea{
+        font-size: 11px;
+        width: 100%;
+        height: 150px;
+    }
+    #form-box button{
+        font-size: 12px;
+        width: 150px;
+        height: 35px;
+    }
+
+    /* ---------- Footer -----------*/
+    footer span#direitos{ 
+        font-size: 20px;
+    }
+    footer a{
+        color: #FFF;
+    }
+}
+
+/* Mobile Screen */
+@media(max-width:576px){
+
+    /* ---------- Global formatations -----------*/
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 21px;
+    }
+
+    /* ---------- General formatations -----------*/
+    .container-2{
+        width: 100%;
+    }
+    .d-flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .d-none-mobile{
+        display: none;
+    }
+    .button{
+        font-size: 14px;
+    }
+
+    /* ---------- Header -----------*/
+    #navbar{
+        display: none;
+    }
+    .navbar-active{ /* Stopped here*/
+        border: 1px solid blue;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 250px;
+        background-color: aqua;
+    }
+
+    header #menu-hamburuger{
+        border: 1px solid none;
+        display: block;
+        width: 25px;
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 0;
+    }
+    .menu-bars{
+        width: 100%;
+        height: 2px;
+        background-color: #DB695A;
+    }
+
+    /* ---------- Banner 1 -----------*/
+    /* ---------- Banner 2 -----------*/
+    #banner-1, #banner-2{
+        height: 500px;
+        padding: 40px 0;
+    }
+    #banner-1 img, #banner-2 img{
+        max-width: 420px;
+    }
+
+    /* ---------- Depoiments -----------*/
+    #depoiments{
+        height:1000px;
+    }
+    .depoiment-box{ 
+        width: 220px;
+        height: 260px;
+        margin-bottom: 20px;
+    }
+    .depoiment-box h4{
+        font-size: 20px;
+    }
+    .depoiment-box p{
+        font-size: 15px;
+    }
+
+    /* ---------- Prices -----------*/
+    #prices{
+        height: 850px;
+    }
+    .prices-flex{
+        margin-top: 30px;
+    }
+    .price-box{
+        width: 180px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    .price-box h4, 
+    .price-currency,
+    .price-hour{
+        font-size: 18px;
+    }
+    .price-value{
+        font-size: 45px;
+    }
+
+    /* ---------- Contact -----------*/
+    #contact{
+        height: 500px;
+    }
+    #d-form-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    #form-box{
+        max-width: 400px;
+        height: 370px;
+    }
+
+    /* ---------- Footer -----------*/
+    footer span#direitos,
+    footer span#direitos a{ 
+        font-size: 16px;
+    }
+    footer a{
+        font-size: 11.5px;
+    }
+}

@@ -9,8 +9,8 @@
         <title>BestSitter - Home</title>
 
         <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="docs/css/style.css">
-        <script src="docs/js/app.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/app.js"></script>
 
     </head>
 
@@ -20,7 +20,7 @@
         <header>
             <div class="container">
                 
-                <h1><img src="docs/img/logo.png" alt="BestSitters logo"></h1>
+                <h1><img src="img/logo.png" alt="BestSitters logo"></h1>
                 
                 <nav id="navbar">
                    <ul>
@@ -29,6 +29,12 @@
                     <li><a href="#">Ajuda</a></li>
                     </ul> 
                 </nav>
+
+                <div id="menu-hamburuger" onclick="menu()">
+                    <div class="menu-bars bar-1"></div>
+                    <div class="menu-bars bar-2"></div>
+                    <div class="menu-bars bar-3"></div>
+                </div>
                 
             </div>
         </header>
@@ -54,7 +60,7 @@
                     </div>
     
                     <div class="container-2">
-                        <img src="docs/img/img banner 1.png" alt="Imagem banner 1">
+                        <img src="img/img banner 1.png" alt="Imagem banner 1">
                     </div>
 
                 </div>
@@ -65,7 +71,7 @@
                 <div class="container d-flex">
 
                     <div class="container-2">
-                        <img src="docs/img/img banner 2.png" alt="Imagem banner 2">
+                        <img src="img/img banner 2.png" alt="Imagem banner 2">
                     </div>
 
                     <div class="container-2">
@@ -89,7 +95,7 @@
 
                     <div class="d-flex" id="depoiments-flex">
                         <div class="depoiment-box">
-                            <img src="docs/img/depoiment 1.jpg" alt="Pessoa do depoimento 1">
+                            <img src="img/depoiment 1.jpg" alt="Pessoa do depoimento 1">
 
                             <h4>Lorem Ipsum</h4>
 
@@ -97,7 +103,7 @@
                         </div>
 
                         <div class="depoiment-box">
-                            <img src="docs/img/depoiment 2.jpg" alt="Pessoa do depoimento 2">
+                            <img src="img/depoiment 2.jpg" alt="Pessoa do depoimento 2">
 
                             <h4>Lorem Ipsum</h4>
 
@@ -105,7 +111,7 @@
                         </div>
 
                         <div class="depoiment-box">
-                            <img src="docs/img/depoiment 3.jpg" alt="Pessoa do depoimento 3">
+                            <img src="img/depoiment 3.jpg" alt="Pessoa do depoimento 3">
 
                             <h4>Lorem Ipsum</h4>
 
@@ -163,11 +169,12 @@
                     <h2>Entre em contato</h2>
 
                     <div class="d-flex">
-                        <div class="container-2">
-                            <img src="docs/img/img contato.png" alt="Babysitter image">
+                        
+                        <div class="container-2 d-none-mobile">
+                            <img src="img/img contato.png" alt="Babysitter image">
                         </div>
     
-                        <div class="container-2">
+                        <div class="container-2" id="d-form-mobile">
                             
                             <form action="" id="form-box">
                                 <input type="text" placeholder="Digite seu nome">
