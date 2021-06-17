@@ -18,7 +18,6 @@ h2{
     font-size: 35px;
     font-weight: bold;
 }
-
 /* ---------- General formatations -----------*/
 #depoiments h2, #prices h2, #contact h2{
     text-align: center;
@@ -42,88 +41,91 @@ h2{
 }
 /* ---------- Container -----------*/
 .container{
-    max-width: 1200px;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
 .container-2{
     width: 50%;
+    max-width: 700px;
 }
-
 /* ---------- Header -----------*/
 header{
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
-    z-index: 5;
-    background-color: #FFF;
+    height: 75vh;
+    background-image: url("../img/capa_pc_tablet.png");
+    background-size: cover;
+    background-position: center;
 }
-header .container{
+#navbar{
+    height: 60px;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .container img{
-    display: flex;
+#logo{
     align-self: center;
     width: 45px;
     height: 45px;
 }
-nav#navbar ul{
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-nav#navbar li{
+.menu li{
     margin-left: 25px;
 }
-nav#navbar a{
+.menu a{
     color: #DB695A;
     font-size: 20px;
     font-weight: bold;
     transition: all 0.2s;
 }
-nav#navbar a:hover{
+.menu a:hover{
     color: #fbb1a7;
 }
-header #menu-hamburuger{
+.menu-btn{
     display: none;
 }
-
 /* ---------- Banner 1 -----------*/
-#banner-1{
-    background-color: #f3fdfd;
-    height: 600px;
+#banner-1{ 
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #banner-1 h2{
-    color: #E59085;
+    text-align: justify;
+    color: #DB695A;
     margin-bottom: 20px;
 }
 #banner-1 p{
-    color: #6e6e6e;
+    color: #DB695A;
     margin-bottom: 20px;
     text-align: justify;
 }
 #banner-1 button{
-    border-color: #E59085;
-    color: #E59085;
+    border-color: #DB695A;
+    color: #DB695A;
+    display: block;
+    width: 300px;
 }
 #banner-1 button:hover{
     color: white;
-    background-color: #E59085;
+    background-color: #DB695A;
 }
-#banner-1 img{
-    width: 100%;
-}
-
 /* ---------- Banner 2 -----------*/
 #banner-2{
     background-color: #B9E4ED;
     height: 600px;
+}
+.d-flex-banner-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #banner-2 img{
     width: 100%;
@@ -132,18 +134,17 @@ header #menu-hamburuger{
     color: #FFF;
     margin-bottom: 20px;
 }
-#banner-2 p{
+#banner-2 p{ 
     color: #FFF;
     margin-bottom: 20px;
 }
-
 /* ---------- Depoiments -----------*/
 #depoiments{
     height: 600px;
     padding: 30px 0;
 }
 #depoiments-flex{
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 100px;
 }
 #depoiments h2{
@@ -154,8 +155,8 @@ header #menu-hamburuger{
     background-color:#85A9CD;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     width: 250px;
-    height: 300px;
     padding: 20px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +174,6 @@ header #menu-hamburuger{
 .depoiment-box p{
     text-align: center;
 }
-
 /* ---------- Prices -----------*/
 #prices{
     background-color: #F3F3F3;
@@ -185,12 +185,13 @@ header #menu-hamburuger{
 }
 .prices-flex{
     margin-top: 100px;
-    justify-content: space-around;
+    justify-content: center;
 }
 .price-box{
     color: #FFF;
     border-radius: 30px;
-    padding: 20px 0;
+    padding: 20px;
+    margin: 0 40px;
     width: 250px;
     height: 300px;
 }
@@ -212,7 +213,7 @@ header #menu-hamburuger{
     font-weight: bold;
     display: flex;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
 }
 .price-currency{
@@ -225,26 +226,34 @@ header #menu-hamburuger{
     font-size: 30px;
     align-self: flex-end;
 }
-
 /* ---------- Contact -----------*/
 #contact{
     padding: 30px 0;
     height: 600px;
 }
+.d-flex-contats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #contact h2{
     color: #88D1C6;
 }
 #contact img{
-    max-height: 450px;
+    width: 100%;
 }
 #form-box{
     background-color: #F3F3F3;
     border-radius: 20px;
-    width: 100%;
-    max-height: 450px;
+    max-width: 400px;
+    height: auto;
     padding: 30px 25px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
+}
+#form-box input, #form-box textarea{
+    outline: none;
 }
 #form-box input{
     border: none;
@@ -276,13 +285,13 @@ header #menu-hamburuger{
 #form-box button:hover{
     background-color: #7fe6d6;
 }
-
 /* ---------- Footer -----------*/
 footer{
     color: #fff;
     background-color: #E88A7D;
-    height: 300px;
+    height: auto;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 footer span#direitos{ 
     font-size: 25px;
@@ -299,23 +308,73 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+/* ---------- Modal -----------*/
+.modal{
+    background-color: rgba(0, 0, 0, 0.486);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: none;
+    justify-content: center;
+    padding-top: 30px;
+}
+.modal-message{
+    border-radius: 10px;
+    background-color: white;
+    width: auto;
+    height: 120px;
+    padding: 20px;
+    min-height: 100px;
+}
+.modal-message button{ 
+    color: white;
+    font-size: 16px;
+    border-color: transparent;
+    background-color: #DB695A;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.modal-active{
+    display: flex;
+}
 /* ---------- Media Queries -----------*/
 
 /* Big Tablets/Ipad Pro Screen */
 @media (max-width:1024px){
+
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
     
     /* ---------- Global formatations -----------*/
     body{
         font-size: 15px;
     }
     h2{
-        font-size: 27px;
+        font-size: 24px;
     }
     /* ---------- General formatations -----------*/
     .button{
         font-size: 16px;
     }
-
+    /* ---------- Header -----------*/
+    header{ 
+        height: 600px;
+    }
+    /* ---------- Banner 1 -----------*/
+    #banner-1{
+        width: 320px;
+    }
+    #banner-1 button{
+        width: 100%;
+    }
     /* ---------- Depoiments -----------*/
     #depoiments{
         height: 550px;
@@ -325,20 +384,14 @@ footer a:hover{
     }
     .depoiment-box{ 
         width: 215px;
-        height: 300px;
-        padding: 14px;
+        padding: 15px 10px;
     }
-
     /* ---------- Prices -----------*/
-    #prices{
-        height: 600px;
-        padding: 30px;
-    }
     .prices-flex{
         margin-top: 100px;
     }
     .price-box{
-        padding: 20px 0;
+        padding: 20px;
         width: 200px;
         height: 250px;
     }
@@ -350,13 +403,11 @@ footer a:hover{
     .price-value{
         font-size: 60px;
     }
-
     /* ---------- Contact -----------*/
     #contact img {
         width: 100%;
         max-height: none;
     }
-
     /* ---------- Footer -----------*/
     footer span#direitos{ 
         font-size: 22px;
@@ -366,109 +417,8 @@ footer a:hover{
     }
 }
 
-/* Small Tablets/Ipad Screen */
-@media (max-width:768px){
-
-    /* ---------- Global formatations -----------*/
-    body{
-        font-size: 14px;
-    }
-    h2{
-        font-size: 20px;
-    }
-
-    /* ---------- General formatations -----------*/
-    .button{
-        font-size: 14px;
-    }
-
-    /* ---------- Banner 1 -----------*/
-    #banner-1{
-        height: 400px;
-    }
-
-    /* ---------- Banner 2 -----------*/
-    #banner-2{
-        height:400px;
-    }
-
-
-    /* ---------- Depoiments -----------*/
-    #depoiments{
-        height:400px;
-        padding: 30px 0;
-    }
-    #depoiments-flex{
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-    .depoiment-box{ 
-        width: 160px;
-        height: 240px;
-        padding-top: 15px;
-    }
-    .depoiment-box img{
-        width: 60px;
-        height: 60px;
-    }
-    .depoiment-box h4{
-        font-size: 16px;
-    }
-    .depoiment-box p{
-        font-size: 13px;
-    }
-
-    /* ---------- Prices -----------*/
-    #prices{
-        height: 400px;
-        padding: 30px;
-    }
-    .prices-flex{
-        margin-top: 50px;
-    }
-    .price-box{
-        width: 150px;
-        height: 220px;
-    }
-    .price-box h4, 
-    .price-currency,
-    .price-hour{
-        font-size: 18px;
-    }
-    .price-value{
-        font-size: 45px;
-    }
-
-    /* ---------- Contact -----------*/
-    #contact{
-        height: 500px;
-    }
-    #form-box input{
-        font-size: 11px;
-    }
-    #form-box textarea{
-        font-size: 11px;
-        width: 100%;
-        height: 150px;
-    }
-    #form-box button{
-        font-size: 12px;
-        width: 150px;
-        height: 35px;
-    }
-
-    /* ---------- Footer -----------*/
-    footer span#direitos{ 
-        font-size: 20px;
-    }
-    footer a{
-        color: #FFF;
-    }
-}
-
 /* Mobile Screen */
-@media(max-width:576px){
+@media(max-width:767px){
 
     /* ---------- Global formatations -----------*/
     body{
@@ -477,7 +427,6 @@ footer a:hover{
     h2{
         font-size: 21px;
     }
-
     /* ---------- General formatations -----------*/
     .container-2{
         width: 100%;
@@ -492,50 +441,38 @@ footer a:hover{
     .button{
         font-size: 14px;
     }
-
     /* ---------- Header -----------*/
-    #navbar{
-        display: none;
-    }
-    .navbar-active{ /* Stopped here*/
-        border: 1px solid blue;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 250px;
-        background-color: aqua;
-    }
-
-    header #menu-hamburuger{
-        border: 1px solid none;
-        display: block;
-        width: 25px;
-        height: 22px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        z-index: 0;
-    }
-    .menu-bars{
-        width: 100%;
-        height: 2px;
-        background-color: #DB695A;
-    }
-
-    /* ---------- Banner 1 -----------*/
-    /* ---------- Banner 2 -----------*/
-    #banner-1, #banner-2{
+    header{
         height: 500px;
+    }
+    #navbar ul a{
+        font-size: 16px;
+    }
+    /* ---------- Banner 2 -----------*/
+    .d-flex-banner-2{
+        flex-direction: column;
+    }
+    #banner-2{
+        height: auto;
         padding: 40px 0;
     }
-    #banner-1 img, #banner-2 img{
-        max-width: 420px;
+    #banner-2 img{
+        max-width: 400px;
+        height: auto;
     }
-
+    .img-center-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    #banner-2 h2{
+        text-align: center;
+    }
     /* ---------- Depoiments -----------*/
     #depoiments{
-        height:1000px;
+        height:auto;
+    }
+    #depoiments-flex{
+        margin-top: 40px;
     }
     .depoiment-box{ 
         width: 220px;
@@ -548,10 +485,9 @@ footer a:hover{
     .depoiment-box p{
         font-size: 15px;
     }
-
     /* ---------- Prices -----------*/
     #prices{
-        height: 850px;
+        height: auto;
     }
     .prices-flex{
         margin-top: 30px;
@@ -569,7 +505,6 @@ footer a:hover{
     .price-value{
         font-size: 45px;
     }
-
     /* ---------- Contact -----------*/
     #contact{
         height: 500px;
@@ -579,10 +514,10 @@ footer a:hover{
         justify-content: center;
     }
     #form-box{
-        max-width: 400px;
+        margin: 0;
+        width: 400px;
         height: 370px;
     }
-
     /* ---------- Footer -----------*/
     footer span#direitos,
     footer span#direitos a{ 
@@ -590,5 +525,93 @@ footer a:hover{
     }
     footer a{
         font-size: 11.5px;
+    }
+}
+
+/* Smartphone Screen */
+@media(max-width:425px){
+    /* ---------- Header -----------*/
+    header{
+        height: 100vh;
+    }
+    #logo{
+        width: 35px;
+        height:35px;
+    }
+     /* ---------- Navbar menu -----------*/
+    .menu{ 
+        background-color: #DB695A;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 200px;
+        height: 100%;
+        padding-top: 60px;
+        transition: all .2s;
+    }
+    .menu li{
+        margin-bottom: 20px;
+    }
+    .menu a{
+        color: white;
+    }
+    .menu-active{ /* Stopped here*/
+        right: 0;
+        transition: all .2s;
+    }
+    .menu-btn{
+        display: block;
+        width: 25px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 0;
+        transition: all .2s;
+    }
+    .menu-bars{
+        width: 100%;
+        height: 2px;
+        background-color: #DB695A;
+        transition: all .2s;
+    }
+    .menu-btn-active .menu-bars{
+        background-color: white;
+        transition: all .2s;
+    }
+    .bar-1{
+        transform-origin: left;
+    }
+    .bar-3{
+        transform-origin: left;
+    }
+    .menu-btn-active .bar-1{
+        transform: rotate(45deg);
+    }
+    .menu-btn-active .bar-2{
+        display: none;
+    }
+    .menu-btn-active .bar-3{
+        transform: rotate(-45deg);
+    }
+    /* ---------- Banner-1 -----------*/
+    #banner-1{
+        width: 100%;
+    }
+    #banner-1 h2{
+        text-align: center;
+    }
+    /* ---------- Contacts -----------*/
+    #form-box{
+        width: 100%;
+        height: 370px;
+    }
+    #form-box button{
+        width: 100%;
     }
 }
