@@ -30,9 +30,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Features desenvolvidas no projeto:
 
-- ☑️ Flexbox
+- ☑️ Menu mobile
 - ☑️ Design Responsivo 
-- ☑️ Eventos e DOM
+- ☑️ Modal do formulário
 
 ---
 ## 📂 Como instalar o projeto
